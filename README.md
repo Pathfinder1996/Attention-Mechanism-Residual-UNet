@@ -1,7 +1,5 @@
 # Attention-Mechanism-Residual-UNet
 
----
-
 ## 簡介
 程式練習...訓練一個結合注意力機制和殘差塊的UNet，用來分割靜脈影像。
 
@@ -9,13 +7,9 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
 注意力機制和殘差塊則是參考兩篇期刊提出的模塊加入上述變異的UNet中。
 
-注意力機制[isbi challenge](https://arxiv.org/abs/1804.03999)
+注意力機制[isbi challenge](https://arxiv.org/abs/1804.03999), Attention U-Net: Learning Where to Look for the Pancreas
 
-Attention U-Net: Learning Where to Look for the Pancreas
-
-殘差塊[isbi challenge](https://arxiv.org/abs/1711.10684)
-
-Road Extraction by Deep Residual U-Net
+殘差塊[isbi challenge](https://arxiv.org/abs/1711.10684), Road Extraction by Deep Residual U-Net
 
 ---
 
