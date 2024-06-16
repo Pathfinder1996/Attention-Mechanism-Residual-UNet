@@ -7,7 +7,7 @@
 
 UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
-注意力機制和殘差塊則是參考兩篇期刊提出的模塊加入上述變異的UNet中。
+注意力機制和殘差塊則是參考兩篇arXiv提出的模塊加入上述變異的UNet中。
 
 注意力機制[isbi challenge](https://arxiv.org/abs/1804.03999), Attention U-Net: Learning Where to Look for the Pancreas
 
