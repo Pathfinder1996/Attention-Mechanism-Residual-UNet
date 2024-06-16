@@ -44,8 +44,13 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 ---
 
 ## 模型架構
+主架構
 ![主網路](image/1.PNG)
+
+殘差塊
 ![殘差塊](image/2.PNG)
+
+注意力機制
 ![注意力機制](image/3.PNG)
 
 ---
@@ -55,7 +60,7 @@ Epoch 100/100
 86/86 [==============================] - ETA: 0s - loss: 0.0245 - IOU_coefficient: 0.9523 - dice_coefficient: 0.9756 - accuracy: 0.9609
 Epoch 100: loss improved from 0.02452 to 0.02446, saving model to best_model.hdf5
 86/86 [==============================] - 28s 328ms/step - loss: 0.0245 - IOU_coefficient: 0.9523 - dice_coefficient: 0.9756 - accuracy: 0.9609 - val_loss: 0.0258 - val_IOU_coefficient: 0.9497 - val_dice_coefficient: 0.9742 - val_accuracy: 0.9585
-
+指標分數
 ![分數](image/output1.png)
 
 ---
