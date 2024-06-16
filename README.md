@@ -20,7 +20,7 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
 一共有1782張手背靜脈影像(自行提取感興趣區域) 資料集拆成7:2:1 用於 訓練:驗證:測試
 
-分別將圖像跟對應的標籤放在下述資料夾。image_size = (256, 256, 1)
+分別將圖像跟對應的標籤放在下述資料夾。image_size = (256, 256)
 
 訓練
 `data/membrane/train/image`
