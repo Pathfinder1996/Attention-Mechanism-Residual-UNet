@@ -44,9 +44,9 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 ---
 
 ## 模型架構
-![主網路](image/1.png)
-![殘差塊](image/2.png)
-![注意力機制](image/3.png)
+![主網路](image/1.PNG)
+![殘差塊](image/2.PNG)
+![注意力機制](image/3.PNG)
 
 ---
 
