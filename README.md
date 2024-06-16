@@ -20,28 +20,19 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
 一共有1960張靜脈影像 資料集拆成7:2:1 用於 訓練:驗證:測試
 
-分別將圖像放在下述資料夾
+分別將圖像跟對應的標籤放在下述資料夾
 
 `data/membrane/train/image`
+`data/membrane/train/label`
 
 `data/membrane/val/val_imagee`
+`data/membrane/val/val_label`
 
 `data/membrane/test`
 
 ---
 
 ## 訓練標籤製作
-訓練標籤製作: 
-
-1. 自動伽瑪校正
-
-2. CLAHE(clipLimit=2.0, tileGridSize=(4, 4))
-
-3. 低通高斯濾波器去噪
-
-4. 高通拉普拉斯濾波器
-
-5. 反轉二值化 + otsu決定閾值
 
 ---
 
