@@ -22,11 +22,11 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
 分別將圖像跟對應的標籤放在下述資料夾。image_size = (256, 256, 1)
 
-訓練及對應的標籤
+訓練
 `data/membrane/train/image`
 `data/membrane/train/label`
 
-驗證及對應的標籤
+驗證
 `data/membrane/val/val_imagee`
 `data/membrane/val/val_label`
 
