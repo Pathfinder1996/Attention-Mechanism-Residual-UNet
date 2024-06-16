@@ -46,6 +46,12 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
    
 5. 反轉二值化 + Otsu決定閾值
 
+
+原圖與標籤
+
+
+![原圖](data/membrane/train/image/3.png) ![模型預測](data/membrane/train/label/3.png)
+
 ---
 
 ## 模型架構
@@ -73,6 +79,8 @@ Epoch 100: loss did not improve from 0.01750
 ![分數](image/4.png)
 
 訓練好的模型預測測試集的圖片
+
+
 ![原圖](data/membrane/test/4.png) ![模型預測](data/membrane/test/4_predict.png)
 
 ---
