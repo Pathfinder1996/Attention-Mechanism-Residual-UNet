@@ -5,7 +5,7 @@
 
 訓練一個結合注意力機制和殘差塊的UNet，用來分割靜脈影像。
 
-UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
+UNet部分參考[https://github.com/zhixuhao/unet](https://github.com/zhixuhao/unet)
 
 注意力機制和殘差塊則是參考兩篇arXiv提出的模塊加入上述變異的UNet中。
 
@@ -15,12 +15,12 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
 ---
 
-## 靜脈數據集
-靜脈數據集來自[isbi challenge](https://github.com/wilchesf/dorsalhandveins)。可以在 `data/membrane` 資料夾中找到幾張原圖與自製標籤。
+## 靜脈資料集
+靜脈資料集來自[https://github.com/wilchesf/dorsalhandveins](https://github.com/wilchesf/dorsalhandveins)。可以在 `data/membrane` 資料夾中看到幾張原圖與自製標籤。
 
 一共有1782張手背靜脈影像(自行提取感興趣區域) 資料集拆成7:2:1 用於 訓練:驗證:測試
 
-分別將圖像跟對應的標籤放在下述資料夾。image_size = 256 x 256
+分別將圖像跟對應的標籤放在下述資料夾。(image_size = 256 x 256)
 
 訓練
 `data/membrane/train/image`
@@ -78,7 +78,7 @@ Epoch 100: loss did not improve from 0.01750
 
 ![分數](image/4.png)
 
-訓練好的模型預測測試集的圖片
+用訓練好的模型預測測試集的圖片
 
 
 ![原圖](data/membrane/test/4.png) ![模型預測](data/membrane/test/4_predict.png)
@@ -86,7 +86,7 @@ Epoch 100: loss did not improve from 0.01750
 ---
 
 ## 使用方法
-下載後直接執行 `train.ipynb` 或是 `train.py`。
+下載後直接執行 `train.ipynb` 
 
 ---
 
