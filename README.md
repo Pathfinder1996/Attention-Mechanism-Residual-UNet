@@ -18,7 +18,7 @@ UNet部分參考[https://github.com/zhixuhao/unet](https://github.com/zhixuhao/u
 ## 靜脈資料集
 靜脈資料集來自[https://github.com/wilchesf/dorsalhandveins](https://github.com/wilchesf/dorsalhandveins)。可以在 `data/membrane` 資料夾中看到幾張原圖與自製標籤。
 
-一共有1782張手背靜脈影像(自行提取感興趣區域) 資料集拆成7:2:1 用於 訓練:驗證:測試
+資料集一共有1782張手背靜脈影像(自行提取感興趣區域) 拆成7:2:1 用於 訓練:驗證:測試
 
 分別將圖像跟對應的標籤放在下述資料夾。(image_size = 256 x 256)
 
