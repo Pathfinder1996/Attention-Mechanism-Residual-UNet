@@ -1,7 +1,7 @@
 # Attention-Mechanism-Residual-UNet
 
 ## 簡介
-程式練習...
+模型架設程式練習...
 
 訓練一個結合注意力機制和殘差塊的UNet，用來分割靜脈影像。
 
