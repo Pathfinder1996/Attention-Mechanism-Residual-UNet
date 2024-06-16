@@ -16,23 +16,35 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 ---
 
 ## 靜脈數據集
-靜脈數據集來自[isbi challenge](https://www.kaggle.com/datasets/michaelgoh/contactless-knuckle-palm-print-and-vein-dataset)。可以在 `data/membrane` 資料夾中找到幾張原圖與自製標籤。
+靜脈數據集來自[isbi challenge](https://github.com/wilchesf/dorsalhandveins)。可以在 `data/membrane` 資料夾中找到幾張原圖與自製標籤。
 
-一共有1960張靜脈影像 資料集拆成7:2:1 用於 訓練:驗證:測試
+一共有1782張手背靜脈影像(自行提取感興趣區域) 資料集拆成7:2:1 用於 訓練:驗證:測試
 
-分別將圖像跟對應的標籤放在下述資料夾
+分別將圖像跟對應的標籤放在下述資料夾。image_size = (256, 256, 1)
 
+訓練及對應的標籤
 `data/membrane/train/image`
 `data/membrane/train/label`
 
+驗證及對應的標籤
 `data/membrane/val/val_imagee`
 `data/membrane/val/val_label`
 
+測試
 `data/membrane/test`
 
 ---
 
 ## 訓練標籤製作
+1. 自動伽瑪校正
+   
+2. CLAHE(clipLimit=2.0, tileGridSize=(4, 4))
+   
+3. 低通高斯濾波器去噪
+ 
+4. 高通拉普拉斯濾波器
+   
+5. 反轉二值化 + Otsu決定閾值
 
 ---
 
