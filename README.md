@@ -85,8 +85,6 @@ opencv-python==4.5.3.56
 
 scikit-image==0.19.3
 
-scipy==1.13.0
-
 numpy==1.26.4
 
 matplotlib==3.8.0
