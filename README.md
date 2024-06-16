@@ -20,7 +20,7 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
 一共有1782張手背靜脈影像(自行提取感興趣區域) 資料集拆成7:2:1 用於 訓練:驗證:測試
 
-分別將圖像跟對應的標籤放在下述資料夾。image_size = (256, 256)
+分別將圖像跟對應的標籤放在下述資料夾。image_size = 256 x 256
 
 訓練
 `data/membrane/train/image`
@@ -65,12 +65,15 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 
 ## 訓練結果
 Epoch 100/100
-86/86 [==============================] - ETA: 0s - loss: 0.0245 - IOU_coefficient: 0.9523 - dice_coefficient: 0.9756 - accuracy: 0.9609
-Epoch 100: loss improved from 0.02452 to 0.02446, saving model to best_model.hdf5
-86/86 [==============================] - 28s 328ms/step - loss: 0.0245 - IOU_coefficient: 0.9523 - dice_coefficient: 0.9756 - accuracy: 0.9609 - val_loss: 0.0258 - val_IOU_coefficient: 0.9497 - val_dice_coefficient: 0.9742 - val_accuracy: 0.9585
+78/78 [==============================] - ETA: 0s - loss: 0.0175 - IOU_coefficient: 0.9655 - dice_coefficient: 0.9825 - accuracy: 0.9712
+Epoch 100: loss did not improve from 0.01750
+78/78 [==============================] - 21s 264ms/step - loss: 0.0175 - IOU_coefficient: 0.9655 - dice_coefficient: 0.9825 - accuracy: 0.9712 - val_loss: 0.0184 - val_IOU_coefficient: 0.9635 - val_dice_coefficient: 0.9814 - val_accuracy: 0.9697
 
 
-![分數](image/output1.png)
+![分數](image/4.png)
+
+訓練好的模型預測測試集的圖片
+![原圖](data/membrane/test/4.png) ![模型預測](data/membrane/test/4_predict.png)
 
 ---
 
