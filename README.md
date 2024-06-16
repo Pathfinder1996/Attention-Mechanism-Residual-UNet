@@ -67,7 +67,6 @@ Epoch 100: loss improved from 0.02452 to 0.02446, saving model to best_model.hdf
 86/86 [==============================] - 28s 328ms/step - loss: 0.0245 - IOU_coefficient: 0.9523 - dice_coefficient: 0.9756 - accuracy: 0.9609 - val_loss: 0.0258 - val_IOU_coefficient: 0.9497 - val_dice_coefficient: 0.9742 - val_accuracy: 0.9585
 
 
-指標分數
 ![分數](image/output1.png)
 
 ---
