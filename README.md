@@ -29,7 +29,17 @@ UNet部分參考[isbi challenge](https://github.com/zhixuhao/unet)
 ---
 
 ## 訓練標籤製作
-訓練標籤製作: 自動伽瑪校正 --> CLAHE(clipLimit=2.0, tileGridSize=(4, 4)) --> 低通高斯濾波器去噪 --> 高通拉普拉斯濾波器 --> 反轉二值化 + otsu決定閾值
+訓練標籤製作: 
+
+1. 自動伽瑪校正
+
+2. CLAHE(clipLimit=2.0, tileGridSize=(4, 4))
+
+3. 低通高斯濾波器去噪
+
+4. 高通拉普拉斯濾波器
+
+5. 反轉二值化 + otsu決定閾值
 
 ---
 
