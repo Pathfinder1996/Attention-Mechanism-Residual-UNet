@@ -93,7 +93,7 @@ Epoch 100: loss did not improve from 0.01750
 ## Requirements
 python==3.9.2
 
-tensorflow==2.10.0
+tensorflow(Keras)==2.10.0
 
 opencv-python==4.5.3.56
 
