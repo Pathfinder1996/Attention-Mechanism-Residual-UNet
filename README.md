@@ -57,15 +57,15 @@ UNet部分參考: [https://github.com/zhixuhao/unet](https://github.com/zhixuhao
 ## 模型架構
 主架構
 
-![主網路](image/1.PNG)
+![主網路](image/)
 
 殘差塊
 
-![殘差塊](image/2.PNG)
+![殘差塊](image/)
 
 注意力機制
 
-![注意力機制](image/3.PNG)
+![注意力機制](image/)
 
 ---
 
