@@ -7,13 +7,13 @@
 
 參考資料如下:
 
-UNet部分參考: [https://github.com/zhixuhao/unet](https://github.com/zhixuhao/unet)
+1.UNet部分參考: [https://github.com/zhixuhao/unet](https://github.com/zhixuhao/unet)
 
 注意力機制和殘差塊則是參考兩篇arXiv提出的模塊加入上述變異的UNet中。
 
-注意力機制: [Attention U-Net: Learning Where to Look for the Pancreas](https://arxiv.org/abs/1804.03999)
+2.注意力機制: [Attention U-Net: Learning Where to Look for the Pancreas](https://arxiv.org/abs/1804.03999)
 
-殘差塊: [Road Extraction by Deep Residual U-Net](https://arxiv.org/abs/1711.10684)
+3.殘差塊: [Road Extraction by Deep Residual U-Net](https://arxiv.org/abs/1711.10684)
 
 ---
 
