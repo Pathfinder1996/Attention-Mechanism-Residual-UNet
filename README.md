@@ -57,20 +57,24 @@
 ---
 
 ## 模型架構
-主架構
+主架構：
 
-![主網路](image/1.png)
+<div style="text-align:center;">
+  <img src="image/1.png" alt="1" style="width: 600px">
+</div>
+
+殘差塊：
 
 <div style="text-align:center;">
   <img src="image/2.png" alt="2" style="width: 600px">
-
-   
-   殘差塊
 </div>
 
-注意力機制
+注意力機制：
 
-![注意力機制](image/3.png)
+<div style="text-align:center;">
+  <img src="image/3.png" alt="3" style="width: 600px">
+</div>
+
 
 ---
 
