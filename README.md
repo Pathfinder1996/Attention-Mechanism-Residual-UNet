@@ -62,11 +62,9 @@
 ![主網路](image/1.png)
 
 <div style="text-align:center;">
-  <img src="image/2.png" alt="DIKW-pyramid" style="width: 300px">
-
-殘差塊
-
-![殘差塊](image/2.png)
+  <img src="image/2.png" alt="2" style="width: 600px">
+   殘差塊
+</div>
 
 注意力機制
 
