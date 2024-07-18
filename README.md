@@ -75,10 +75,8 @@
 ---
 
 ## 訓練結果
-Epoch 100/100
-78/78 [==============================] - ETA: 0s - loss: 0.0175 - IOU_coefficient: 0.9655 - dice_coefficient: 0.9825 - accuracy: 0.9712
-Epoch 100: loss did not improve from 0.01750
-78/78 [==============================] - 21s 264ms/step - loss: 0.0175 - IOU_coefficient: 0.9655 - dice_coefficient: 0.9825 - accuracy: 0.9712 - val_loss: 0.0184 - val_IOU_coefficient: 0.9635 - val_dice_coefficient: 0.9814 - val_accuracy: 0.9697
+Epoch 100: loss improved from 0.01768 to 0.01759, saving model to best_model.hdf5
+78/78 [==============================] - 21s 266ms/step - loss: 0.0176 - iou_coefficient: 0.9654 - dice_coefficient: 0.9824 - accuracy: 0.9711 - val_loss: 0.0187 - val_iou_coefficient: 0.9632 - val_dice_coefficient: 0.9813 - val_accuracy: 0.9693
 
 
 ![分數](image/4.png)
