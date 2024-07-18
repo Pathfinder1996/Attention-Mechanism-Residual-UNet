@@ -59,23 +59,17 @@
 ## 模型架構
 主架構：
 
-<div style="text-align:center;">
-  <img src="image/1.png" alt="1">
-</div>
+![主架構](image/1.png)
 
 
 殘差塊：
 
-<div style="text-align:center;">
-  <img src="image/2.png" alt="2">
-</div>
+![殘差塊](image/2.png)
 
 
 注意力機制：
 
-<div style="text-align:center;">
-  <img src="image/3.png" alt="3">
-</div>
+![注意力機制](image/3.png)
 
 
 ---
