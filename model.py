@@ -3,7 +3,7 @@ from keras.layers import Input, Conv2D, MaxPooling2D
 
 from blocks import *
 
-def ResUNet_Attention(input_size=(256, 256, 1)):
+def residual_attention_unet(input_size=(256, 256, 1)):
     #通道數
     f = [16, 32, 64, 128]
     

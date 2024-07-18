@@ -6,7 +6,7 @@ from keras.preprocessing.image import ImageDataGenerator
 import skimage.io as io
 import skimage.transform as trans
 
-def adjustData(img, mask):
+def adjust_data(img, mask):
     if np.max(img) > 1:
         img = img / 255
         mask = mask / 255
@@ -14,7 +14,7 @@ def adjustData(img, mask):
         mask[mask <= 0.5] = 0
     return img, mask
 
-def trainGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict,
+def train_generator(batch_size, train_path, image_folder, mask_folder, aug_dict,
                    image_color_mode="grayscale", mask_color_mode="grayscale",
                    image_save_prefix="image", mask_save_prefix="mask",
                    save_to_dir=None, target_size=(256, 256), seed=1):
@@ -45,10 +45,10 @@ def trainGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict,
     
     train_generator = zip(image_generator, mask_generator)
     for img, mask in train_generator:
-        img, mask = adjustData(img, mask)
+        img, mask = adjust_data(img, mask)
         yield img, mask
 
-def testGenerator(test_path, num_image=180, target_size=(256, 256), as_gray=True):
+def test_generator(test_path, num_image=180, target_size=(256, 256), as_gray=True):
     for i in range(num_image):
         img = io.imread(os.path.join(test_path, f"{i}.png"), as_gray=as_gray)
         img = img / 255
@@ -57,7 +57,7 @@ def testGenerator(test_path, num_image=180, target_size=(256, 256), as_gray=True
         img = np.reshape(img, (1,) + img.shape)
         yield img
 
-def saveResult(save_path, npyfile):
+def save_result(save_path, npyfile):
     for i, item in enumerate(npyfile):
         img = item[:, :, 0]
         img = (img * 255).astype(np.uint8)
