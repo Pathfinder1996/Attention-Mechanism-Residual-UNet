@@ -24,15 +24,15 @@ def residual_block(x, filters, strides=1):
 
 #注意力
 def attention_gate(Fg, Fs, filters):
-    Wg = Conv2D(filters, kernel_size=1, padding='same')(Fg)
+    Wg = Conv2D(filters, kernel_size=1, padding="same")(Fg)
     Wg = BatchNormalization()(Wg)
 
-    Ws = Conv2D(filters, kernel_size=1, padding='same')(Fs)
+    Ws = Conv2D(filters, kernel_size=1, padding="same")(Fs)
     Ws = BatchNormalization()(Ws)
 
-    psi = Activation('relu')(Add()([Wg, Ws]))
-    psi = Conv2D(1, kernel_size=1, padding='same')(psi)
-    psi = Activation('sigmoid')(psi)
+    psi = Activation("relu")(Add()([Wg, Ws]))
+    psi = Conv2D(1, kernel_size=1, padding="same")(psi)
+    psi = Activation("sigmoid")(psi)
 
     return Multiply()([Fs, psi])
 
