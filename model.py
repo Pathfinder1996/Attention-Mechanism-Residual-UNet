@@ -4,12 +4,12 @@ from keras.layers import Input, Conv2D, MaxPooling2D
 from blocks import *
 
 def residual_attention_unet(input_size=(256, 256, 1)):
-    #通道數
+    #卷積 filter 設置
     f = [16, 32, 64, 128]
     
     inputs = Input(input_size)
 
-    #編碼塊
+    #編碼
     encode0 = inputs
     encode1 = residual_block(encode0, f[0], strides=1)
     pooling1 = MaxPooling2D((2, 2))(encode1)
@@ -20,10 +20,10 @@ def residual_attention_unet(input_size=(256, 256, 1)):
     encode3 = residual_block(pooling2, f[2], strides=1)
     pooling3 = MaxPooling2D((2, 2))(encode3)
 
-    #橋梁
+    #橋
     b0 = residual_block(pooling3, f[3], strides=1)
 
-    #解碼塊
+    #解碼
     up1 = upsample_concat_block(b0, encode3)
     attention1 = attention_gate(encode3, up1, f[2])
     decode1 = residual_block(attention1, f[2])
@@ -36,7 +36,6 @@ def residual_attention_unet(input_size=(256, 256, 1)):
     attention3 = attention_gate(encode1, up3, f[0])
     decode3 = residual_block(attention3, f[0])
 
-    #輸出
     outputs = Conv2D(1, (1, 1), padding="same", activation="sigmoid")(decode3)
     
     model = Model(inputs=inputs, outputs=outputs)

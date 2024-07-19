@@ -13,7 +13,7 @@ def conv_block(x, filters, kernel_size=(3, 3), padding="same", strides=1):
     conv = Conv2D(filters, kernel_size, padding=padding, strides=strides)(conv)
     return conv
 
-#殘差神經網路的殘差塊
+#殘差塊
 def residual_block(x, filters, strides=1):
     res = conv_block(x, filters, strides=strides)
     res = conv_block(res, filters, strides=1)
@@ -22,7 +22,7 @@ def residual_block(x, filters, strides=1):
     output = Add()([shortcut, res])
     return output
 
-#注意力機制
+#注意力
 def attention_gate(Fg, Fs, filters):
     Wg = Conv2D(filters, kernel_size=1, padding='same')(Fg)
     Wg = BatchNormalization()(Wg)
@@ -36,7 +36,7 @@ def attention_gate(Fg, Fs, filters):
 
     return Multiply()([Fs, psi])
 
-#上採樣與跳層連接塊, 編碼塊跳層連接到解碼塊
+#上採樣與跳層連接塊 編碼塊跳層連接到解碼塊
 def upsample_concat_block(x, xskip):
     u = UpSampling2D((2, 2))(x)
     c = Concatenate()([u, xskip])
