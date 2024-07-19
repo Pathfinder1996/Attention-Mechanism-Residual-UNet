@@ -7,20 +7,22 @@
 
 參考資料如下:
 
-1. UNet部分參考: [https://github.com/zhixuhao/unet](https://github.com/zhixuhao/unet)
+1. UNet 部分參考: [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597)
 
-注意力機制和殘差塊則是參考兩篇arXiv提出的模塊加入上述變異的UNet中。
+2. 變異 UNet 部分參考: [https://github.com/zhixuhao/unet](https://github.com/zhixuhao/unet)
 
-2. 注意力機制: [Attention U-Net: Learning Where to Look for the Pancreas](https://arxiv.org/abs/1804.03999)
+注意力機制和殘差塊則是參考兩篇arXiv提出的模塊加入上述變異的 UNet 中。
 
-3. 殘差塊: [Road Extraction by Deep Residual U-Net](https://arxiv.org/abs/1711.10684)
+3. 注意力機制: [Attention U-Net: Learning Where to Look for the Pancreas](https://arxiv.org/abs/1804.03999)
+
+4. 殘差塊: [Road Extraction by Deep Residual U-Net](https://arxiv.org/abs/1711.10684)
 
 ---
 
 ## 靜脈資料集
 靜脈資料集來自[https://github.com/wilchesf/dorsalhandveins](https://github.com/wilchesf/dorsalhandveins)。可以在 `data/membrane` 資料夾中看到幾張原圖與自製標籤。
 
-資料集一共有1782張手背靜脈影像(自行提取感興趣區域) 拆成7:2:1 用於 訓練:驗證:測試
+資料集一共有1782張手背靜脈影像(自行提取感興趣區域) 拆成 7:2:1 用於 訓練:驗證:測試
 
 分別將圖像跟對應的標籤放在下述資料夾。(image_size = 256 x 256)
 
