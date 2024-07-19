@@ -91,7 +91,7 @@ Epoch 100: loss improved from 0.01768 to 0.01759, saving model to best_model.hdf
 ---
 
 ## 使用方法
-下載後直接執行 `train.ipynb` 
+下載後直接執行 `main.ipynb` 
 
 ---
 
