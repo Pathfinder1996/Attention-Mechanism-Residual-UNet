@@ -61,17 +61,17 @@
 ## 模型架構
 主架構：
 
-![主架構](image/1.png)
+![主架構](image/0.png)
 
 
 殘差塊：
 
-![殘差塊](image/2.png)
+![殘差塊](image/1.png)
 
 
 注意力機制：
 
-![注意力機制](image/3.png)
+![注意力機制](image/2.png)
 
 
 ---
@@ -81,7 +81,7 @@ Epoch 100: loss improved from 0.01768 to 0.01759, saving model to best_model.hdf
 78/78 [==============================] - 21s 266ms/step - loss: 0.0176 - iou_coefficient: 0.9654 - dice_coefficient: 0.9824 - accuracy: 0.9711 - val_loss: 0.0187 - val_iou_coefficient: 0.9632 - val_dice_coefficient: 0.9813 - val_accuracy: 0.9693
 
 
-![分數](image/4.png)
+![分數](image/3.png)
 
 用訓練好的模型預測測試集的圖片
 
