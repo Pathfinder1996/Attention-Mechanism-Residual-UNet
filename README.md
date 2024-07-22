@@ -108,10 +108,10 @@ numpy==1.26.4
 
 matplotlib==3.8.0
 
-CUDA 11.2
-
-cuDNN 8.1.1
-
 OS：windows10
 
 GPU：RTX3060 12G
+
+CUDA 11.2
+
+cuDNN 8.1.1
