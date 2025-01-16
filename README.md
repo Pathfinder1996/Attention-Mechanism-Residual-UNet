@@ -3,7 +3,7 @@
 ## 簡介
 程式練習...
 
-訓練一個結合注意力機制和殘差塊的UNet，用來分割靜脈影像。
+訓練一個結合注意力門和殘差塊的 UNet，用來分割靜脈影像。
 
 參考資料如下:
 
@@ -11,9 +11,9 @@
 
 2. 變異 UNet 部分參考: [https://github.com/zhixuhao/unet](https://github.com/zhixuhao/unet)
 
-注意力機制和殘差塊則是參考兩篇arXiv提出的模塊加入上述變異的 UNet 中。
+注意力門和殘差塊則是參考兩篇 arXiv 提出的模塊加入上述變異的 UNet 中。
 
-3. 注意力機制: [Attention U-Net: Learning Where to Look for the Pancreas](https://arxiv.org/abs/1804.03999)
+3. 注意力門: [Attention U-Net: Learning Where to Look for the Pancreas](https://arxiv.org/abs/1804.03999)
 
 4. 殘差塊: [Road Extraction by Deep Residual U-Net](https://arxiv.org/abs/1711.10684)
 
@@ -22,7 +22,7 @@
 ## 靜脈資料集
 靜脈資料集來自[https://github.com/wilchesf/dorsalhandveins](https://github.com/wilchesf/dorsalhandveins)。可以在 `data/membrane` 資料夾中看到幾張原圖與自製標籤。
 
-資料集一共有1782張手背靜脈影像(自行提取感興趣區域) 拆成 7:2:1 用於 訓練:驗證:測試
+資料集一共有 1782 張手背靜脈影像(自行提取感興趣區域) 拆成 7:2:1 用於 訓練:驗證:測試
 
 分別將圖像跟對應的標籤放在下述資料夾。(image_size = 256 x 256)
 
@@ -69,9 +69,9 @@
 ![殘差塊](image/1.png)
 
 
-注意力機制：
+注意力門：
 
-![注意力機制](image/2.png)
+![注意力門](image/2.png)
 
 
 ---
